@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>LAB-MEETING</title>
+
+		<meta name="description" content="LAB-MEETING">
+		<meta name="author" content="Carlos A. Lugo">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/serif.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="IMLM/2dshlab.png">
+
+					<h2 style="color: rgba(255,255,255,0.75); text-shadow: 0 0 100px rgba(0,255,255,0.95);">Structural Colour in Hibiscus Trionum</h2>
+					<h3 style="color: rgba(255,255,255,0.75); text-shadow: 0 0 100px rgba(0,255,255,0.95);">Ridge formation and cuticle mechanics</h3>
+					<h3 style="color: rgba(255,255,255,0.75); text-shadow: 0 0 100px rgba(0,255,255,0.95);">during develpment</h3>
+					<br>
+					<h4 style="color: rgba(255,255,255,0.75); text-shadow: 0 0 100px rgba(0,255,255,0.95);">
+						13/04/2017</h4>
+					<br>
+					<!-- h4 style="color: rgba(255,255,255,0.75); text-shadow: 0 0 100px rgba(0,255,255,0.95);">
+					Interdisciplinary applications of statistical Physics </h4 -->
+				  <h4 style="color: rgba(255,255,255,0.75); text-shadow: 0 0 100px rgba(0,255,255,0.95);">Lab Meeting</h4>
+
+
+					<img  class="stretch" width=0% style="border:none; box-shadow:none;"data-src="IMLM/PSLOGO.png" ></img>
+
+					<p style="color: rgba(255,255,255,0.75); text-shadow: 0 0 100px rgba(0,255,255,0.95);">
+						Carlos A Lugo </p>
+
+
+				</section>
+
+
+				<section>
+							 <h2 align="left" style="color: rgba(5, 84, 255, 0.73);">Outline</h3>
+							 <br>
+							 <h3 align="left">Introduction</h3>
+							 <br>
+							 <h3 align="left">Models</h3>
+							 <br>
+							 <h3 align="left">To do</h3>
+							 <br>
+
+				</section>
+
+
+
+<!-- ************************************************************** -->
+<section>
+
+  <section>
+     <h2 align="left" style="color: rgba(5, 84, 255, 0.73);">Conundrum</h3>
+			 	 <img  class="stretch" width=100% style="border:none; box-shadow:none;"data-src="IMLM/image16.png" ></img>
+	</section>
+
+	<section>
+     <h2 align="left" style="color: rgba(5, 84, 255, 0.73);">Conundrum</h3>
+			 	 <img  class="stretch" width=100% style="border:none; box-shadow:none;"data-src="IMLM/image41.png" ></img>
+		<p align=left>	Ridge Features: $\lambda=1.3±0.3 \mu m$,  $A=L_x×L_y=(15 \times 70)(\mu m)^2$</p>
+	</section>
+
+
+	<section>
+     <h2 align="left" style="color: rgba(5, 84, 255, 0.73);">Conundrum</h3>
+
+			 <style>
+			 .newspaper {
+			 -webkit-column-count: 2; /* Chrome, Safari, Opera */
+			 -moz-column-count: 2; /* Firefox */
+			 column-count: 2;
+			 }
+			</style>
+
+
+
+			 <div class="newspaper">
+			 <!--h4 align="left" style="color: rgba(5, 84, 255, 0.73);">
+				 Quick Cheatsheet-Sums and Differences
+			 </h4-->
+	      <img  class="stretch" width=40% style="border:none; box-shadow:none;"data-src="IMLM/image17.png" ></img>
+			 <!--p align="left">Unique solutions given the initial data e.g. $v_o$ and $y_o$</p-->
+
+
+			 				<h3 align="left" style="color: rgba(5, 84, 255, 0.73);">Questions? </h3>
+			 				<p align="left">What determines the appearance/lack of ordered ridges in the cuticle</p>
+			 				<p align="left">Mechanics?, Chemistry?, Genetics?</p>
+			 				<p align="left">Can we develop an analytical theory?</p>
+
+			</div>
+
+	</section>
+
+
+	 <section>
+	   <style>
+		  .newspaper {
+		  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+		  -moz-column-count: 2; /* Firefox */
+		  column-count: 2;
+		  }
+	   </style>
+
+
+
+		  <div class="newspaper">
+			<!--h4 align="left" style="color: rgba(5, 84, 255, 0.73);">
+				Quick Cheatsheet-Sums and Differences
+			</h4-->
+
+			<!--p align="left">Unique solutions given the initial data e.g. $v_o$ and $y_o$</p-->
+			 <img  class="stretch" width=100% style="border:none; box-shadow:none;"data-src="IMLM/image3.png" ></img>
+			 </p>
+			 <p align="left" style="color: rgba(5, 84, 255, 0.73);">Light and Structural Colour</p>
+
+			 <img  class="stretch" width=100% style="border:none; box-shadow:none;"data-src="IMLM/spectra.png" ></img>
+
+			 <!--p align="left" style="color: rgba(5, 84, 255, 0.73);">Optical path differences</p-->
+
+			 <img  class="stretch" width=100% style="border:none; box-shadow:none;"data-src="IMLM/dgrating.png" ></img>
+
+
+
+		 </div>
+	 </section>
+	  <section>
+		 <style>
+		 .newspaper {
+		 -webkit-column-count: 2; /* Chrome, Safari, Opera */
+		 -moz-column-count: 2; /* Firefox */
+		 column-count: 2;
+		 	}
+		 </style>
+		 <h3 align="left" style="color: rgba(5, 84, 255, 0.73);">
+		  Patterns and Optical Description</h3>
+			<div class="newspaper">
+				<img  class="stretch" width=70% style="border:none; box-shadow:none;"data-src="IMLM/iriA.png" ></img>
+
+				<p align="left" style="color: rgba(5, 84, 255, 0.73);">Geometrical Description</p>
+				<p align="center">$\sin \theta_L - \sin \theta_V = \frac{n \lambda}{d}$</p>
+				<p align="left">Where $n$ is an integer and
+					$\lambda$ the wavelength</p>
+			<br>
+			<br>
+
+				<img  class="stretch" width=70% style="border:none; box-shadow:none;"data-src="IMLM/diffraction_01.jpg" ></img>
+
+			<br>
+
+			<p align="left" style="color: rgba(5, 84, 255, 0.73);">Applications and Models</p>
+			<a href="http://derschmale.com/lab/doodles/iridescence/build/" target="_blank">
+  			<img src="IMLM/ebunny.png" alt="HTML tutorial" style="width:52px;height:52px;border:0;">
+			</a>
+
+			<a href="http://0.0.0.0:8000/fresnel.html" target="_blank">
+  			<img src="IMLM/ebunnyb.png" alt="HTML tutorial" style="width:52px;height:52px;border:0;">
+			</a>
+			<br>
+
+			</div>
+	  </section>
+  </section>
+<!-- ************************************************************** -->
+<section>
+	<!--section data-background="stuff/TALKBEAMER/pacman2.jpg"-->
+	<section data-background="IMLM/original.gif">
+		<h2 align="left"  style="color: rgba(255,255,255,0.5); text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de ;">Fields Cheatsheet</h2>
+
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
+
+
+		<h3  style="color: rgba(255,255,255,0.5); text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de ;">Dynamics in space and time</h3>
+		<br><br><br>
+ </section>
+
+ <section>
+	<h3 align="left" style="color: rgba(5, 84, 255, 0.73);">Fields and Oscillations I</h3>
+
+	<style>
+  .newspaper {
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+ 	 }
+  </style>
+
+ 	<div class="newspaper">
+ 		<p align="left">
+ 		 We call fields to portions of space with one or more properties attached to it.
+ 		</p>
+
+ 		<p align="left">
+ 		If $r=(x,y)$ is a point in the plane, then a quantity $\phi(r)$ represents a field.
+ 	 </p>
+
+ 	 <p align="left">
+
+   <img  class="stretch" width=100% style="border:none; box-shadow:none;"data-src="IMLM/WaveformA.png" ></img>
+ 		</p>
+
+		 <p align="left">
+		  Fields also change in time, so we often write $\phi(r,t)$.
+			If we want to measure the change of the field respect to time or the coordinates $x$ or $y$, we often look at things such as:
+		 	 $\frac{\Delta \phi}{\Delta t}$, $\frac{\Delta \phi}{\Delta x}$, $\frac{\Delta \phi}{\Delta y}$.
+		  </p>
+
+		 <img  class="stretch" width=100% style="border:none; box-shadow:none;"data-src="IMLM/DX.png" ></img>
+
+ 	</div>
+
+</section>
+
+
+<section>
+ <h3 align="left" style="color: rgba(5, 84, 255, 0.73);">Fields and Oscillations II</h3>
+
+ <style>
+ .newspaper {
+ -webkit-column-count: 2; /* Chrome, Safari, Opera */
+ -moz-column-count: 2; /* Firefox */
+ column-count: 2;
+	}
+ </style>
+
+ <div class="newspaper">
+	 <p align="left">
+		 Often we only now  the relations between those changes so we write equations which have the field as a solution. (diffusion, wave equation)
+	 </p>
+
+	<img  class="stretch" width=85% style="border:none; box-shadow:none;"data-src="IMLM/Pevol.png" ></img>
+	<br>
+	<br>
+	<img  class="stretch" width=85% style="border:none; box-shadow:none;"data-src="IMLM/dLEaq.gif" ></img>
+
+ </div>
+
+</section>
+
+</section>
+<!-- ************************************************************** -->
+<!-- ************************************************************** -->
+<!-- ************************************************************** -->
+<section>
+	<!--section data-background="images/popjumps.png" data-background-color="#7878E7" data-background-size="100%"-->
+	<section data-background="IMLM/image41.png" data-background-color="#142e59" data-background-size="100%">
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		<h3 style= "color: rgba(255,255,255,0.5); text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de ;">Mechanical Buckling Models</h3>
+	</section>
+
+
+ <section>
+		<h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Classical Settings</h3>
+
+		<p align="left">
+ 		 In general an effective compression  over the system is required to buckle.
+ 	  </p>
+
+		<img align="left" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/buckmodes.png" ></img>
+
+ </section>
+
+ <section>
+ 	<h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">The Neo-Hookean material</h3>
+
+ 	<img  class="stretch" width=100% style="border:none; box-shadow:none;"data-src="IMLM/NH.png" ></img>
+
+ </section>
+
+ <section>
+	 <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Current Model Revisited (Flat Cells)</h3>
+
+	<p align="left">
+	 The cuticule is a layer characterised by uniform principal stretches  $\lambda_k$  ($k=1,2,3$). $\lambda_1$ and $\lambda_2$ in the plane of the cuticle.
+  </p>
+
+	<p align="left">
+		The cuticule is assumed to be incompressible (i.e $\lambda_3=\frac{1}{(\lambda_1 \lambda_2)^2}$) and a Neo-Hookean constitutive law.
+  </p>
+
+$$\begin{eqnarray*}
+\sigma_{11} &=& \mu \lambda_1^2 - p \\
+\sigma_{22} &=& \mu \lambda_2^2 - p\\
+\sigma_{33} &=& \frac{\mu}{\lambda_1^2\lambda_2^2}-p\\
+\end{eqnarray*}$$
+
+	<p align="left">
+  $p$ an arbitrary pressure and $\mu$ the shear modulus. ($\nabla \cdot \sigma = 0$).
+  An additional stress $\mu \Pi$  acts on  the upper and lower faces of the cuticule via a boundary condition $\sigma_{33}=-\mu \Pi$, which implies:
+  $$p=\frac{\mu}{\lambda_1^2 \lambda_2^2}+\mu \Pi$$
+ </p>
+
+
+ </section>
+
+
+ <section>
+	 <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Current Model Revisited (Flat Cells) II</h3>
+
+
+	<p align="left">
+	 If $\Pi>0$ the growth induced compressive stress (normal to the cell wall) adds to the pressure in the cuticule, the model postulates:
+
+	 $$\Pi=\beta \left ( \lambda_1\lambda_2 - \frac{1}{\lambda_1^2 \lambda_2^2} \right)$$
+
+	 Which for isotropic expansion and $\beta=1$ corresponds to a stress free expansion.
+	 Thus: $\beta>1$ is overproduction and $\beta<1$ underproduction of cuticule.
+   </p>
+   <p align="left">
+	 The final form of the stresses is:
+
+	 $$\begin{eqnarray*}
+	 \frac{\sigma_{11}}{\mu} &=&  \lambda_1 \left ( \lambda_1 - \beta \lambda_2 \right)+ \frac{\beta-1}{\lambda_1^2\lambda_2^2}\\
+	 \frac{\sigma_{22}}{\mu} &=&  \lambda_2 \left ( \lambda_2 - \beta \lambda_1 \right)+ \frac{\beta-1}{\lambda_1^2\lambda_2^2}
+	 \end{eqnarray*}$$
+ </p>
+ </section>
+
+ <section>
+   <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Current Model Revisited (Flat Cells) III</h3>
+
+	 <p align="left">
+	 Region I: $\sigma_{11}>0$, $\sigma_{22}>0$:
+   Tensile regime in both directions, which implies a smooth cuticle.
+   </p>
+	 <p align="left">
+	 Region II: $\sigma_{11}>0$, $\sigma_{22}<0$:
+	 Tension in direction 1 and compression in direction 2, this might lead to buckling for enough compressive stresses aligned in the 1 direction.
+   </p>
+	 <p align="left">
+	 Region III: $\sigma_{11}<0$, $\sigma_{22}>0$:
+	 Tension in direction 2 and compression in the ortogonal co-planar directions which might cause ridge formation in direction 1.
+    </p>
+	 <p align="left">
+   	Region IV: $\sigma_{11}<0$, $\sigma_{22}<0$:
+	  Compressive regime on both directions this might induce a disordered state in the ridge patterning for large enough stresses.
+   </p>
+
+		<p align="left">
+	  Stress free conditions: The cuticle has no stress iff there is no growth ($\lambda_k=1$) or  $\beta=1$ and the growth is isotropic ($\lambda_1=\lambda_2$).
+	  </p>
+ </section>
+
+ <section>
+ 	 <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">The role of $\beta$</h3>
+	 <br>
+	 <br>
+	 <p align="left">
+   The role of $\beta$  varies depending if it is smaller or larger than one.
+ </p>
+ <p align="left">
+	  For $\beta=1$ the smooth region predominates unless the stretches
+	  are very different and there is growth ($\lambda_k >=1$)
+ </p>
+ <p align="left">
+		 For $\beta>1$, the buckling regimes are promoted
+		 as long as the stretches are different.
+   </p>
+ <p align="left">
+	The case $\beta=1$ always gives ridges in the direction of larger elongation.
+  </p>
+</section>
+
+ <section>
+	 	<h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">The role of $\beta$</h3>
+		<img align="center" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/fA.png" ></img>
+ </section>
+
+ <section>
+	 <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">The role of $\beta$</h3>
+	 <img align="center" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/fB.png" ></img>
+
+ </section>
+
+
+ <section>
+	 	<h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">The role of $\beta$</h3>
+		<img align="center" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/fC.png" ></img>
+
+ </section>
+
+
+ <section>
+	 <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">The role of $\beta$</h3>
+	 <img align="center" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/fD.png" ></img>
+ </section>
+
+
+ <section>
+	 <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Growth and remodelling?</h3>
+   <br>
+	 <img align="center" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/growbuck.png" ></img>
+
+	 <p align="left">
+		 Perturbation theory allows to obtain dynamics whose solution is effectively a ridged solution to teh first order! However it does not account for
+		 the amplitude.
+	 </p>
+
+ </section>
+
+
+ <section>
+
+	 <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Overproduction.</h3>
+	 <br>
+	<img align="center" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/growbuckx.png" ></img>
+
+	<p align="left">
+		Perturbation theory allows to obtain dynamics whose solution is effectively a ridged solution to teh first order! However it does not account for
+		the amplitude.
+	</p>
+
+
+	<p align="left">
+	 Faster cuticle production than growth seems to be effectively  a key mechanism for ridge formation, at leats at the begining.
+  </p>
+
+ </section>
+
+ <section>
+	 <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Numerical Results</h3>
+	 <img align="center" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/buckrod/A2.png" ></img>
+	  <img align="center" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/buckrod/A6.png" ></img>
+ </section>
+
+
+	 <section>
+	 	 <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Numerical Results</h3>
+	 	 <img align="center" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/buckrod/A9.png" ></img>
+	 	  <img align="center" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/buckrod/A10.png" ></img>
+	  </section>
+
+</section>
+
+
+<!-- ************************************************************** -->
+<!-- ************************************************************** -->
+<!-- ************************************************************** -->
+<!-- ************************************************************** -->
+<!-- ************************************************************** -->
+<!-- ************************************************************** -->
+<!-- ************************************************************** -->
+<!-- ************************************************************** -->
+<section>
+	<section data-background="IMLM/cutcool.png" data-background-color="#4882ff"  data-background-size="100%">
+		<h2 align="left"  style="color: rgba(255, 255, 255,0.75); text-shadow: 0 0 100px rgba(0,255,255,0.95);">Work in progress: Cuticle Dynamics.</h2>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
+		<h3  style="color: rgba(255, 255, 255,0.75); text-shadow: 0 0 100px rgba(0,255,255,0.95);">Growth, LALI.</h3>
+		<br><br><br>
+  </section>
+
+	<section>
+    <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Cuticle Chemistry</h3>
+		<img align="center" class="stretch" width="40%" style="border:none; box-shadow:none; " data-src="IMLM/cpx.png" ></img>
+
+  </section>
+
+
+<section>
+					<h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">A Closer Look:</h3>
+					<br>
+					<style>
+					.newspaper {
+					-webkit-column-count: 2; /* Chrome, Safari, Opera */
+					-moz-column-count: 2; /* Firefox */
+					column-count: 2;
+					}
+					</style>
+					<div class="newspaper">
+
+						<img align="left" class="stretch" width="90%" style="border:none; box-shadow:none; " data-src="IMLM/F2.large.jpg" ></img>
+						<br>
+
+						<img align="left" class="stretch" width="90%" style="border:none; box-shadow:none; " data-src="IMLM/F4.large.jpg" ></img>
+						<br>
+
+				</div></section>
+
+
+			<section>
+				<!-- h4 align="left">Example: The genetic code (L=3): 64 sequences, 21 Aminoacids.</h4 -->
+				<style>
+				.newspaper {
+				-webkit-column-count: 2; /* Chrome, Safari, Opera */
+				-moz-column-count: 2; /* Firefox */
+				column-count: 2;
+				}
+				</style>
+				<div class="newspaper">
+				<p align="left"><strong>Generic framework for periodic patterning.<br></strong>
+				</p>
+				<img width="92%" style="border:none; box-shadow:none;" data-src="IMLM/LALIAx.png" ></img>
+			</p>
+				<p align="left"><br>
+					Reaction Kinetics:
+					<small><br>
+					<br>
+					<br>
+					<br>
+					In general if a chemical species $X$ reacts y another species $Y$ producing $Z$ one writes the scheme:
+
+					$$X+Y \overset{k}{ \rightarrow }Z$$
+
+					This translates into equations for each of the reactants and product numbers $N_X$, $N_Y$, $N_Z$:
+
+					$$
+					\begin{eqnarray*}
+					\frac{dN_X}{dt} &=& F(N_X,N_Y,N_Z)\\
+					\frac{dN_Y}{dt} &=& G(N_X,N_Y,N_Z)\\
+					\frac{dN_Z}{dt} &=& H(N_X,N_Y,N_Z)
+					\end{eqnarray*}
+					$$
+					<br>
+					<br>
+					Which are constrained by Chemistry, (Mass-energy conservation,etc).
+				</small>
+
+			</p>
+
+			</div>
+			</section>
+
+
+			<section>
+				<!-- h4 align="left">Phenotype Neighbourhoods (Pro and Arg )</h4 -->
+				<!--p align="left"><small><strong>Phenotype Neighbourhoods (Pro and Arg )</strong></small></p-->
+
+				<style>
+				.newspaper {
+				-webkit-column-count: 2; /* Chrome, Safari, Opera */
+				-moz-column-count: 2; /* Firefox */
+				column-count: 2;
+				}
+				</style>
+				<div class="newspaper">
+				<p align="left"><small><strong>Pattern Formation Tests:<br></strong>
+				</small></p>
+				<img width="90%" style="border:none; box-shadow:none;" data-src="IMLM/So2d_diagram.png" ></img>
+				<p><small></small>
+					<br>
+					<br>
+					<br>
+					<br>
+				<img width="90%" style="border:none; box-shadow:none;" data-src="IMLM/2d_diagram.png" ></img>
+			</div>
+			</section>
+
+
+	</section>
+
+
+<!-- ************************************************************** -->
+<!-- ************************************************************** -->
+<!-- ************************************************************** -->
+<!-- ************************************************************** -->
+<!-- ************************************************************** -->
+
+<!-- ************************************************************** -->
+<!-- ************************************************************** -->
+<!-- ************************************************************** -->
+<!-- ************************************************************** -->
+
+
+</div>
+</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: false,
+
+				transition: 'fade', // none/fade/slide/convex/concave/zoom
+
+
+				////
+				// The "normal" size of the presentation, aspect ratio will be preserved
+    		// when the presentation is scaled to fit different resolutions. Can be
+    		// specified using percentage units.
+    		width: 1366,
+    		height: 768,
+    		// Factor of the display size that should remain empty around the content
+    		margin: 0.05,
+    		//Bounds for smallest/largest possible scale to apply to content
+    	 //	minScale: 0.9,
+    		//  maxScale: 0.0
+				////
+
+				  math: {
+        	mathjax: 'mathjax/MathJax.js',
+        	config: 'TeX-AMS_HTML-full'
+    			},
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+        	// MathJax
+        	{ src: 'plugin/math/math.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
