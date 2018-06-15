@@ -28,8 +28,10 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
-
-		<!--[if lt IE 9]>
+		
+		<script type="text/javascript"
+   			src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js">
+		</script>		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
 	</head>
@@ -636,7 +638,9 @@ $$\begin{eqnarray*}
 				////
 
 				  math: {
-        	mathjax: 'mathjax/MathJax.js',
+
+		mathjax: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js",        	
+		//mathjax: 'mathjax/MathJax.js',
         	config: 'TeX-AMS_HTML-full'
     			},
 
