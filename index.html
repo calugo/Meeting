@@ -387,7 +387,7 @@
 			<h4 align="left" style="color: rgba(5, 84, 255, 0.73);">Compressible</h4>
 			<p align="left">$W=\frac{\mu}{2}(I_1-3-2\ln(J))+\frac{1}{2}\ln^2(J)$</p>
 
-			
+
 
 			<h4 align="left" style="color: rgba(5, 84, 255, 0.73);">Lamé Constants:</h4>
 
@@ -423,155 +423,115 @@
 <!-- ************************************************************** -->
 <!-- ************************************************************** -->
 <section>
-	<section data-background="IMLM/cutcool.png" data-background-color="#4882ff"  data-background-size="100%">
-		<h2 align="left"  style="color: rgba(255, 255, 255,0.75); text-shadow: 0 0 100px rgba(0,255,255,0.95);">Work in progress: Cuticle Dynamics.</h2>
+	<section data-background="imagesX/F2A.png" data-background-color="#4882ff"  data-background-size="100%">
+
 		<br><br>
 		<br><br>
 		<br><br>
+		<h2 align="left"  style="color: rgba(255, 255, 255,0.75); text-shadow: 0 0 100px rgba(0,255,255,0.95);">Growth and Buckling.</h2>
+
 		<br><br>
 		<br><br>
-		<h3  style="color: rgba(255, 255, 255,0.75); text-shadow: 0 0 100px rgba(0,255,255,0.95);">Growth, LALI.</h3>
 		<br><br><br>
   </section>
 
 	<section>
-    <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Cuticle Chemistry</h3>
-		<img align="center" class="stretch" width="40%" style="border:none; box-shadow:none; " data-src="IMLM/cpx.png" ></img>
+		<h3 align="left" style="color: rgba(5, 84, 255, 0.73);">Elements of every model.</h3>
 
-  </section>
+					<br>
+					<p align="left">1.- Thin sheet with bending stiffness $\mu_s$.</p>
+					<p align="left">2.- Elastic foundation of stiffness $\mu_f$.</p>
+					<p align="left">3.- Imposed compressive strain.</p>
+
+					<br>
+					<p align="justify"> The bending resistance penalizes short wavelengths, the foundation penalizes long wavelengths which in combination
+						lead to new intermediate scales.</p>
+
+	</section>
+
+
+	<section>
+		<h3 align="left" style="color: rgba(5, 84, 255, 0.73);">Morphoelastic Decomposition.</h3>
+
+
+		<style>
+		.newspaper {
+		-webkit-column-count: 2; /* Chrome, Safari, Opera */
+		-moz-column-count: 2; /* Firefox */
+		column-count: 2;
+		}
+	 </style>
+
+
+
+		<div class="newspaper">
+		<!--h4 align="left" style="color: rgba(5, 84, 255, 0.73);">
+			Quick Cheatsheet-Sums and Differences
+		</h4-->
+   <img  class="stretch" width=100% style="border:none; box-shadow:none;"data-src="imagesX/MorphoX.png" ></img>
+
+	 <p align="left">Deformation gradient: $\mathbb{F}=\mathbb{F}_e\mathbb{F}_g=\mathbf{\nabla}\varphi$.</p>
+	 <p align="left">$\mathbb{C}=\mathbb{F}^T\mathbb{F}$, $\mathbb{F}_{e,l}$ and $\mathbb{C}_{e,l}=\mathbb{F}_{e,l}^T\mathbb{F}_{e,l}.$</p>
+	 <p align="left">$W_{e,l}=\frac{\mu}{2}(I_1-3-2\ln(J_{e,l}))+\frac{1}{2}\ln^2(J_{e,l})$.</p>
+	 <p align="left">$\mathbb{P}=\frac{{\partial W}}{\partial{\mathbb{F}}}=\mathbb{P_e}\mathbb{F_g}^{-T}$</p>
+	 <p align="left">Then, we solve: $\nabla\cdot\mathbb{P}=0$</p>
+	 <p align="left">We need to specify the growth tensors. $l$ represents the film and substrate.</p>
+		<!--p align="left">Unique solutions given the initial data e.g. $v_o$ and $y_o$</p-->
+
+	 </div>
+
+
+	</section>
+
+
+		<section>
+			<h3 align="left" style="color: rgba(5, 84, 255, 0.73);">Growth Tensors-Quasistatic Model.</h3>
+
+
+
+
+				<h4 align="left" style="color: rgba(5, 84, 255, 0.73);">Growth Models.</h4>
+			 <p align="left">Deformation gradient: $\mathbb{F_g}=\theta_l(t)\mathbb{I}$.</p>
+			 <p align="left">Where $\theta_l(t)$ follows the rule $\dot{\theta_l}=\lambda(t)\theta_l$ or $\theta_l(t)=\theta_{0,l}e^{\int_0^{t}\lambda(t)}$</p>
+
+			 	<h4 align="left" style="color: rgba(5, 84, 255, 0.73);">Parameters.</h4>
+
+				<p align="left">We use the control parameters $R$ and $h_o$ where:</p>
+ 			  <p align="left">$R=\frac{E_f}{E_s}$ and $h_o$ is the initial thickness of the cuticle.</p>
+
+				<h4 align="left" style="color: rgba(5, 84, 255, 0.73);">Typical Dynamics.</h4>
+
+
+
+
+
+		</section>
+
+<section>
+		<video data-autoplay src="https://www.youtube.com/watch?v=qY04xDpUg1A"></video>
+</section>
+
+</section>
+
+<section>
+	<section>
+		<h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Results $R$.</h3>
+
+		 <img  class="stretch" width=100% style="border:none; box-shadow:none;"data-src="imagesX/RAmps.png" ></img>
+
+	</section>
+
+	<section>
+		<h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Results $h_o$.</h3>
+
+		 <img  class="stretch" width=100% style="border:none; box-shadow:none;"data-src="imagesX/HAmps.png" ></img>
+
+	</section>
+</section>
 
 
 <section>
-					<h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">A Closer Look:</h3>
-					<br>
-					<style>
-					.newspaper {
-					-webkit-column-count: 2; /* Chrome, Safari, Opera */
-					-moz-column-count: 2; /* Firefox */
-					column-count: 2;
-					}
-					</style>
-					<div class="newspaper">
 
-						<img align="left" class="stretch" width="90%" style="border:none; box-shadow:none; " data-src="IMLM/F2.large.jpg" ></img>
-						<br>
-
-						<img align="left" class="stretch" width="90%" style="border:none; box-shadow:none; " data-src="IMLM/F4.large.jpg" ></img>
-						<br>
-
-				</div></section>
-
-
-			<section>
-				<!-- h4 align="left">Example: The genetic code (L=3): 64 sequences, 21 Aminoacids.</h4 -->
-				<style>
-				.newspaper {
-				-webkit-column-count: 2; /* Chrome, Safari, Opera */
-				-moz-column-count: 2; /* Firefox */
-				column-count: 2;
-				}
-				</style>
-				<div class="newspaper">
-				<p align="left"><strong>Generic framework for periodic patterning.<br></strong>
-				</p>
-				<img width="92%" style="border:none; box-shadow:none;" data-src="IMLM/LALIAx.png" ></img>
-			</p>
-				<p align="left"><br>
-					Reaction Kinetics:
-					<small><br>
-					<br>
-					<br>
-					<br>
-					In general if a chemical species $X$ reacts y another species $Y$ producing $Z$ one writes the scheme:
-
-					$$X+Y \overset{k}{ \rightarrow }Z$$
-
-					This translates into equations for each of the reactants and product numbers $N_X$, $N_Y$, $N_Z$:
-
-					$$
-					\begin{eqnarray*}
-					\frac{dN_X}{dt} &=& F(N_X,N_Y,N_Z)\\
-					\frac{dN_Y}{dt} &=& G(N_X,N_Y,N_Z)\\
-					\frac{dN_Z}{dt} &=& H(N_X,N_Y,N_Z)
-					\end{eqnarray*}
-					$$
-					<br>
-					<br>
-					Which are constrained by Chemistry, (Mass-energy conservation,etc).
-				</small>
-
-			</p>
-
-			</div>
-			</section>
-
-
-			<section>
-				<!-- h4 align="left">Phenotype Neighbourhoods (Pro and Arg )</h4 -->
-				<!--p align="left"><small><strong>Phenotype Neighbourhoods (Pro and Arg )</strong></small></p-->
-
-				<style>
-				.newspaper {
-				-webkit-column-count: 2; /* Chrome, Safari, Opera */
-				-moz-column-count: 2; /* Firefox */
-				column-count: 2;
-				}
-				</style>
-				<div class="newspaper">
-				<p align="left"><small><strong>Pattern Formation Tests:<br></strong>
-				</small></p>
-				<img width="90%" style="border:none; box-shadow:none;" data-src="IMLM/So2d_diagram.png" ></img>
-				<p><small></small>
-					<br>
-					<br>
-					<br>
-					<br>
-				<img width="90%" style="border:none; box-shadow:none;" data-src="IMLM/2d_diagram.png" ></img>
-			</div>
-			</section>
-
-
-	</section>
-
-	<section>
-	<section>
-
-		<h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Modeling Solids</h3>
-		<p align="left">
-			</p>
-		<img align="left" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/buckmodes.png" ></img>
-
-	</section>
-
-	<section>
-		<h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Modeling Solids</h3>
-
-		<p align="left">
-			 In general an effective compression  over the system is required to buckle.
-			</p>
-
-		<img align="left" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/buckmodes.png" ></img>
-
-	</section>
-
-
- <section>
-		<h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Classical Settings</h3>
-
-		<p align="left">
-		 In general an effective compression  over the system is required to buckle.
-		</p>
-
-		<img align="left" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/buckmodes.png" ></img>
-
- </section>
-
- <section>
-	<h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">The Neo-Hookean material</h3>
-
-	<img  class="stretch" width=100% style="border:none; box-shadow:none;"data-src="IMLM/NH.png" ></img>
-
- </section>
 
  <section>
 	 <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Current Model Revisited (Flat Cells)</h3>
