@@ -223,7 +223,7 @@
 		 <br>
 		 <br>
 		 <br>
-		<h3 style= "color: rgba(255,255,255,0.5); text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de ;">Mechanics of  Buckling</h3>
+		<h3 style= "color: rgba(255,255,255,0.5); text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de ;">Mechanics of continuum media</h3>
 	</section>
 
 
@@ -331,6 +331,24 @@
 				<p align="left">The distinction between solid, fluid or other continuum comes with the emprirical constitutive relation between
 				$\mathbf{\sigma}$ and $\mathbf{u}$.</p>
 
+				<br>
+				<br>
+				<br>
+
+				<h4 align="left" style="color: rgba(5, 84, 255, 0.73);">Hyperelasticity and biological materials.</h4>
+				<p align="left">Hyperelasticity postulates the existence of a Helmholtz free-energy density function $W$ defined per unit reference volume.</p>
+				<p align="left">Stress is then obtained by taking the derivative of $W$.</p>
+
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+
+
+
 			 <!--p align="left">Unique solutions given the initial data e.g. $v_o$ and $y_o$</p-->
 
 			</div>
@@ -339,209 +357,59 @@
 
 
 
-	<section>
- 		<h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Modeling Solids</h3>
-
- 		<p align="left">
-
-  	  </p>
-
- 		<img align="left" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/buckmodes.png" ></img>
-
-  </section>
 
 	<section>
- 		<h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Modeling Solids</h3>
+		<h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Example: Neo-Hookean materials.</h3>
 
- 		<p align="left">
-  		 In general an effective compression  over the system is required to buckle.
-  	  </p>
+		 <style>
+		 .newspaper {
+		 -webkit-column-count: 2; /* Chrome, Safari, Opera */
+		 -moz-column-count: 2; /* Firefox */
+		 column-count: 2;
+		 }
+		</style>
 
- 		<img align="left" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/buckmodes.png" ></img>
-
-  </section>
 
 
- <section>
-		<h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Classical Settings</h3>
+		 <div class="newspaper">
+		 <!--h4 align="left" style="color: rgba(5, 84, 255, 0.73);">
+			 Quick Cheatsheet-Sums and Differences
+		 </h4-->
 
-		<p align="left">
- 		 In general an effective compression  over the system is required to buckle.
- 	  </p>
+		 <p align="left">Deformation gradient: $\mathbb{F}=\mathbb{I}+\mathbf{\nabla u}$</p>
+		 <p align="left">Right Cauchy-Green deformation tensor: $\mathbb{C}=\mathbb{F}^T \mathbb{F}$</p>
+		 <p align="left">Invariants: $J=\det(\mathbb{F})$ and $I_1=\mathbb{C}$.</p>
 
-		<img align="left" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/buckmodes.png" ></img>
+			<h4 align="left" style="color: rgba(5, 84, 255, 0.73);">Incompressible</h4>
+			<p align="center">$W=\frac{\mu}{3}(I_1-3)$</p>
 
- </section>
 
- <section>
- 	<h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">The Neo-Hookean material</h3>
+			<h4 align="left" style="color: rgba(5, 84, 255, 0.73);">Compressible</h4>
+			<p align="left">$W=\frac{\mu}{2}(I_1-3-2\ln(J))+\frac{1}{2}\ln^2(J)$</p>
 
- 	<img  class="stretch" width=100% style="border:none; box-shadow:none;"data-src="IMLM/NH.png" ></img>
+			
 
- </section>
+			<h4 align="left" style="color: rgba(5, 84, 255, 0.73);">Lamé Constants:</h4>
 
- <section>
-	 <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Current Model Revisited (Flat Cells)</h3>
+			<p align="left">$\mu=\frac{E}{2(1+\nu)}$</p>
+			<p align="left">$\lambda=\frac{\nu E}{(1+\nu)(1-2\nu)}$</p>
+			<p align="left">Where $E$ and $\nu$ represent the Young modulus and the Poisson ratio respectively.</p>
+			<br>
+			<br>
+			<br>
 
-	<p align="left">
-	 The cuticule is a layer characterised by uniform principal stretches  $\lambda_k$  ($k=1,2,3$). $\lambda_1$ and $\lambda_2$ in the plane of the cuticle.
-  </p>
 
-	<p align="left">
-		The cuticule is assumed to be incompressible (i.e $\lambda_3=\frac{1}{(\lambda_1 \lambda_2)^2}$) and a Neo-Hookean constitutive law.
-  </p>
+		 <!--p align="left">Unique solutions given the initial data e.g. $v_o$ and $y_o$</p-->
 
-$$\begin{eqnarray*}
-\sigma_{11} &=& \mu \lambda_1^2 - p \\
-\sigma_{22} &=& \mu \lambda_2^2 - p\\
-\sigma_{33} &=& \frac{\mu}{\lambda_1^2\lambda_2^2}-p\\
-\end{eqnarray*}$$
-
-	<p align="left">
-  $p$ an arbitrary pressure and $\mu$ the shear modulus. ($\nabla \cdot \sigma = 0$).
-  An additional stress $\mu \Pi$  acts on  the upper and lower faces of the cuticule via a boundary condition $\sigma_{33}=-\mu \Pi$, which implies:
-  $$p=\frac{\mu}{\lambda_1^2 \lambda_2^2}+\mu \Pi$$
- </p>
-
+		</div>
 
  </section>
 
-
  <section>
-	 <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Current Model Revisited (Flat Cells) II</h3>
+	 <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Example: Neo-Hookean materials</h3>
 
-
-	<p align="left">
-	 If $\Pi>0$ the growth induced compressive stress (normal to the cell wall) adds to the pressure in the cuticule, the model postulates:
-
-	 $$\Pi=\beta \left ( \lambda_1\lambda_2 - \frac{1}{\lambda_1^2 \lambda_2^2} \right)$$
-
-	 Which for isotropic expansion and $\beta=1$ corresponds to a stress free expansion.
-	 Thus: $\beta>1$ is overproduction and $\beta<1$ underproduction of cuticule.
-   </p>
-   <p align="left">
-	 The final form of the stresses is:
-
-	 $$\begin{eqnarray*}
-	 \frac{\sigma_{11}}{\mu} &=&  \lambda_1 \left ( \lambda_1 - \beta \lambda_2 \right)+ \frac{\beta-1}{\lambda_1^2\lambda_2^2}\\
-	 \frac{\sigma_{22}}{\mu} &=&  \lambda_2 \left ( \lambda_2 - \beta \lambda_1 \right)+ \frac{\beta-1}{\lambda_1^2\lambda_2^2}
-	 \end{eqnarray*}$$
- </p>
- </section>
-
- <section>
-   <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Current Model Revisited (Flat Cells) III</h3>
-
-	 <p align="left">
-	 Region I: $\sigma_{11}>0$, $\sigma_{22}>0$:
-   Tensile regime in both directions, which implies a smooth cuticle.
-   </p>
-	 <p align="left">
-	 Region II: $\sigma_{11}>0$, $\sigma_{22}<0$:
-	 Tension in direction 1 and compression in direction 2, this might lead to buckling for enough compressive stresses aligned in the 1 direction.
-   </p>
-	 <p align="left">
-	 Region III: $\sigma_{11}<0$, $\sigma_{22}>0$:
-	 Tension in direction 2 and compression in the ortogonal co-planar directions which might cause ridge formation in direction 1.
-    </p>
-	 <p align="left">
-   	Region IV: $\sigma_{11}<0$, $\sigma_{22}<0$:
-	  Compressive regime on both directions this might induce a disordered state in the ridge patterning for large enough stresses.
-   </p>
-
-		<p align="left">
-	  Stress free conditions: The cuticle has no stress iff there is no growth ($\lambda_k=1$) or  $\beta=1$ and the growth is isotropic ($\lambda_1=\lambda_2$).
-	  </p>
- </section>
-
- <section>
- 	 <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">The role of $\beta$</h3>
-	 <br>
-	 <br>
-	 <p align="left">
-   The role of $\beta$  varies depending if it is smaller or larger than one.
- </p>
- <p align="left">
-	  For $\beta=1$ the smooth region predominates unless the stretches
-	  are very different and there is growth ($\lambda_k >=1$)
- </p>
- <p align="left">
-		 For $\beta>1$, the buckling regimes are promoted
-		 as long as the stretches are different.
-   </p>
- <p align="left">
-	The case $\beta=1$ always gives ridges in the direction of larger elongation.
-  </p>
+		<img  class="stretch" width=100% style="border:none; box-shadow:none;"data-src="IMLM/NH.png" ></img>
 </section>
-
- <section>
-	 	<h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">The role of $\beta$</h3>
-		<img align="center" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/fA.png" ></img>
- </section>
-
- <section>
-	 <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">The role of $\beta$</h3>
-	 <img align="center" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/fB.png" ></img>
-
- </section>
-
-
- <section>
-	 	<h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">The role of $\beta$</h3>
-		<img align="center" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/fC.png" ></img>
-
- </section>
-
-
- <section>
-	 <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">The role of $\beta$</h3>
-	 <img align="center" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/fD.png" ></img>
- </section>
-
-
- <section>
-	 <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Growth and remodelling?</h3>
-   <br>
-	 <img align="center" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/growbuck.png" ></img>
-
-	 <p align="left">
-		 Perturbation theory allows to obtain dynamics whose solution is effectively a ridged solution to teh first order! However it does not account for
-		 the amplitude.
-	 </p>
-
- </section>
-
-
- <section>
-
-	 <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Overproduction.</h3>
-	 <br>
-	<img align="center" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/growbuckx.png" ></img>
-
-	<p align="left">
-		Perturbation theory allows to obtain dynamics whose solution is effectively a ridged solution to teh first order! However it does not account for
-		the amplitude.
-	</p>
-
-
-	<p align="left">
-	 Faster cuticle production than growth seems to be effectively  a key mechanism for ridge formation, at leats at the begining.
-  </p>
-
- </section>
-
- <section>
-	 <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Numerical Results</h3>
-	 <img align="center" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/buckrod/A2.png" ></img>
-	  <img align="center" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/buckrod/A6.png" ></img>
- </section>
-
-
-	 <section>
-	 	 <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Numerical Results</h3>
-	 	 <img align="center" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/buckrod/A9.png" ></img>
-	 	  <img align="center" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/buckrod/A10.png" ></img>
-	  </section>
 
 </section>
 
@@ -664,6 +532,213 @@ $$\begin{eqnarray*}
 
 
 	</section>
+
+	<section>
+	<section>
+
+		<h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Modeling Solids</h3>
+		<p align="left">
+			</p>
+		<img align="left" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/buckmodes.png" ></img>
+
+	</section>
+
+	<section>
+		<h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Modeling Solids</h3>
+
+		<p align="left">
+			 In general an effective compression  over the system is required to buckle.
+			</p>
+
+		<img align="left" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/buckmodes.png" ></img>
+
+	</section>
+
+
+ <section>
+		<h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Classical Settings</h3>
+
+		<p align="left">
+		 In general an effective compression  over the system is required to buckle.
+		</p>
+
+		<img align="left" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/buckmodes.png" ></img>
+
+ </section>
+
+ <section>
+	<h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">The Neo-Hookean material</h3>
+
+	<img  class="stretch" width=100% style="border:none; box-shadow:none;"data-src="IMLM/NH.png" ></img>
+
+ </section>
+
+ <section>
+	 <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Current Model Revisited (Flat Cells)</h3>
+
+	<p align="left">
+	 The cuticule is a layer characterised by uniform principal stretches  $\lambda_k$  ($k=1,2,3$). $\lambda_1$ and $\lambda_2$ in the plane of the cuticle.
+	</p>
+
+	<p align="left">
+		The cuticule is assumed to be incompressible (i.e $\lambda_3=\frac{1}{(\lambda_1 \lambda_2)^2}$) and a Neo-Hookean constitutive law.
+	</p>
+
+$$\begin{eqnarray*}
+\sigma_{11} &=& \mu \lambda_1^2 - p \\
+\sigma_{22} &=& \mu \lambda_2^2 - p\\
+\sigma_{33} &=& \frac{\mu}{\lambda_1^2\lambda_2^2}-p\\
+\end{eqnarray*}$$
+
+	<p align="left">
+	$p$ an arbitrary pressure and $\mu$ the shear modulus. ($\nabla \cdot \sigma = 0$).
+	An additional stress $\mu \Pi$  acts on  the upper and lower faces of the cuticule via a boundary condition $\sigma_{33}=-\mu \Pi$, which implies:
+	$$p=\frac{\mu}{\lambda_1^2 \lambda_2^2}+\mu \Pi$$
+ </p>
+
+
+ </section>
+
+
+ <section>
+	 <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Current Model Revisited (Flat Cells) II</h3>
+
+
+	<p align="left">
+	 If $\Pi>0$ the growth induced compressive stress (normal to the cell wall) adds to the pressure in the cuticule, the model postulates:
+
+	 $$\Pi=\beta \left ( \lambda_1\lambda_2 - \frac{1}{\lambda_1^2 \lambda_2^2} \right)$$
+
+	 Which for isotropic expansion and $\beta=1$ corresponds to a stress free expansion.
+	 Thus: $\beta>1$ is overproduction and $\beta<1$ underproduction of cuticule.
+	 </p>
+	 <p align="left">
+	 The final form of the stresses is:
+
+	 $$\begin{eqnarray*}
+	 \frac{\sigma_{11}}{\mu} &=&  \lambda_1 \left ( \lambda_1 - \beta \lambda_2 \right)+ \frac{\beta-1}{\lambda_1^2\lambda_2^2}\\
+	 \frac{\sigma_{22}}{\mu} &=&  \lambda_2 \left ( \lambda_2 - \beta \lambda_1 \right)+ \frac{\beta-1}{\lambda_1^2\lambda_2^2}
+	 \end{eqnarray*}$$
+ </p>
+ </section>
+
+ <section>
+	 <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Current Model Revisited (Flat Cells) III</h3>
+
+	 <p align="left">
+	 Region I: $\sigma_{11}>0$, $\sigma_{22}>0$:
+	 Tensile regime in both directions, which implies a smooth cuticle.
+	 </p>
+	 <p align="left">
+	 Region II: $\sigma_{11}>0$, $\sigma_{22}<0$:
+	 Tension in direction 1 and compression in direction 2, this might lead to buckling for enough compressive stresses aligned in the 1 direction.
+	 </p>
+	 <p align="left">
+	 Region III: $\sigma_{11}<0$, $\sigma_{22}>0$:
+	 Tension in direction 2 and compression in the ortogonal co-planar directions which might cause ridge formation in direction 1.
+		</p>
+	 <p align="left">
+		Region IV: $\sigma_{11}<0$, $\sigma_{22}<0$:
+		Compressive regime on both directions this might induce a disordered state in the ridge patterning for large enough stresses.
+	 </p>
+
+		<p align="left">
+		Stress free conditions: The cuticle has no stress iff there is no growth ($\lambda_k=1$) or  $\beta=1$ and the growth is isotropic ($\lambda_1=\lambda_2$).
+		</p>
+ </section>
+
+ <section>
+	 <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">The role of $\beta$</h3>
+	 <br>
+	 <br>
+	 <p align="left">
+	 The role of $\beta$  varies depending if it is smaller or larger than one.
+ </p>
+ <p align="left">
+		For $\beta=1$ the smooth region predominates unless the stretches
+		are very different and there is growth ($\lambda_k >=1$)
+ </p>
+ <p align="left">
+		 For $\beta>1$, the buckling regimes are promoted
+		 as long as the stretches are different.
+	 </p>
+ <p align="left">
+	The case $\beta=1$ always gives ridges in the direction of larger elongation.
+	</p>
+</section>
+
+ <section>
+		<h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">The role of $\beta$</h3>
+		<img align="center" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/fA.png" ></img>
+ </section>
+
+ <section>
+	 <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">The role of $\beta$</h3>
+	 <img align="center" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/fB.png" ></img>
+
+ </section>
+
+
+ <section>
+		<h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">The role of $\beta$</h3>
+		<img align="center" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/fC.png" ></img>
+
+ </section>
+
+
+ <section>
+	 <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">The role of $\beta$</h3>
+	 <img align="center" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/fD.png" ></img>
+ </section>
+
+
+ <section>
+	 <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Growth and remodelling?</h3>
+	 <br>
+	 <img align="center" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/growbuck.png" ></img>
+
+	 <p align="left">
+		 Perturbation theory allows to obtain dynamics whose solution is effectively a ridged solution to teh first order! However it does not account for
+		 the amplitude.
+	 </p>
+
+ </section>
+
+
+ <section>
+
+	 <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Overproduction.</h3>
+	 <br>
+	<img align="center" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/growbuckx.png" ></img>
+
+	<p align="left">
+		Perturbation theory allows to obtain dynamics whose solution is effectively a ridged solution to teh first order! However it does not account for
+		the amplitude.
+	</p>
+
+
+	<p align="left">
+	 Faster cuticle production than growth seems to be effectively  a key mechanism for ridge formation, at leats at the begining.
+	</p>
+
+ </section>
+
+ <section>
+	 <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Numerical Results</h3>
+	 <img align="center" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/buckrod/A2.png" ></img>
+		<img align="center" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/buckrod/A6.png" ></img>
+ </section>
+
+
+	 <section>
+		 <h3 align="left" align="left" style="color: rgba(5, 84, 255, 0.73);">Numerical Results</h3>
+		 <img align="center" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/buckrod/A9.png" ></img>
+			<img align="center" class="stretch" width="100%" style="border:none; box-shadow:none; " data-src="IMLM/buckrod/A10.png" ></img>
+		</section>
+
+</section>
+
+
 
 
 <!-- ************************************************************** -->
